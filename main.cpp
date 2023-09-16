@@ -4,9 +4,9 @@ constexpr int N_ELEMENTS = 100;
 
 int main()
 {
-    int *b = new int[NELEMENTS];
+    int *b = new int[NELEMENTS];    //missing underline for N_ELEMENTS
     std::cout << '1-100 ertekek duplazasa'
-    for (int i = 0;)
+    for (int i = 0;)                //missing statement 2 and statement 3
     {
         b[i] = i * 2;
     }
@@ -16,9 +16,9 @@ int main()
     }    
     std::cout << "Atlag szamitasa: " << std::endl;
     int atlag;
-    for (int i = 0; i < N_ELEMENTS, i++)
+    for (int i = 0; i < N_ELEMENTS, i++)        //needs a ; after N_ELEMENTS
     {
-        atlag += b[i]
+        atlag += b[i]                           //missing ;
     }
     atlag /= N_ELEMENTS;
     std::cout << "Atlag: " << atlag << std::endl;
